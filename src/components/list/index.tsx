@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 // Definitions
 import { IPlayer } from '../../definitions/IPlayer';
-import { IState } from '../../definitions/IStore';
+import { IState } from '../../definitions/IState';
 import { IAction } from '../../definitions/IAction';
 
 // Components

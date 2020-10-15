@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 // Definitions
-import { IState } from '../../definitions/IStore';
+import { IState } from '../../definitions/IState';
 import { IPlayer } from '../../definitions/IPlayer';
 
 // Components

@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import { IAction } from '../../definitions/IAction';
 import { IPlayer } from '../../definitions/IPlayer';
-import { IState } from '../../definitions/IStore';
+import { IState } from '../../definitions/IState';
 
 const initialState = {
 	players: [
