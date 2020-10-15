@@ -13,11 +13,9 @@ const Player: React.FC<IPlayer> = ( props ) => {
 			<PlayerPhoto src={props.photo} alt={props.name} />
 			<PlayerName>{props.name}</PlayerName>
 			<PlayerActions>
-				{props.headline ? (
-					<PlayerButton onClick={(e) => props.handlerClick !== undefined && props.handlerClick({ id: props.id, name: props.name, photo: props.photo })}>Remove</PlayerButton>
-				) : (
-					<PlayerButton onClick={(e) => props.handlerClick !== undefined && props.handlerClick({ id: props.id, name: props.name, photo: props.photo })}>Add</PlayerButton>
-				)}
+				<PlayerButton onClick={() => props.handlerClick !== undefined && props.handlerClick({ id: props.id, name: props.name, photo: props.photo })}>
+					{props.headline ? 'Remove' : 'Add'}
+				</PlayerButton>
 			</PlayerActions>
 		</PlayerWrapper>
 	);
